@@ -17,12 +17,12 @@
     <context:component-scan base-package="com.jun.spring_test"/>
 
 <!--    constructor-arg : 생성자의 가변인자에 값을 할당한다. -->
-    <bean id="참조_Id" class="com.jun.spring_test.controller.Test">
+    <bean id="cons_Id" class="com.jun.spring_test.controller.Test">
         <constructor-arg value="참조값입니다."/>
     </bean>
 <!--값이 할당된 bean 을 넘겨 받는다.-->
     <bean id="myResult" class="com.jun.spring_test.controller.TestController">
-        <constructor-arg ref="참조_Id"/>
+        <constructor-arg ref="cons_Id"/>
     </bean>
 <!--    -->
     <bean id="test2" class="com.jun.spring_test.controller.TestController">
