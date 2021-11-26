@@ -4,6 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
+<!--    Annotation 활성화 : 안한면 bean 을 하나하나 다 등록해야한다.-->
     <mvc:annotation-driven/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -12,6 +13,7 @@
         <property name="order" value="1"/>
     </bean>
 
+<!--    Component 패키지 지정 :  패키지 지정을 안해주면 spring-framework 가 scan 을 못해 작동하지 않는다.-->
     <context:component-scan base-package="com.jun.spring_test"/>
 
 </beans>
