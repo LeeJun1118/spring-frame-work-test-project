@@ -1,10 +1,10 @@
 package com.jun.spring_test.controller;
 
 
-public class Test {
+public class ConstructorTest {
     String resultValue;
 
-    public Test(String resultValue) {
+    public ConstructorTest(String resultValue) {
         this.resultValue = resultValue;
     }
 

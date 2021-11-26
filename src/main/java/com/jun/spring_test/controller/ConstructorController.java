@@ -1,9 +1,9 @@
 package com.jun.spring_test.controller;
 
 
-public class TestController {
+public class ConstructorController {
 
-    public TestController(Test test) {
+    public ConstructorController(ConstructorTest test) {
         System.out.println(test.result());
     }
 }
