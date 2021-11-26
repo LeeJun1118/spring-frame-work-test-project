@@ -24,7 +24,7 @@
     <bean id="myResult" class="com.jun.spring_test.controller.ConstructorController">
         <constructor-arg ref="cons_Id"/>
     </bean>
-<!--    -->
+<!-- 값을 바로 넣어서 실행한다.  -->
     <bean id="test2" class="com.jun.spring_test.controller.ConstructorController">
         <constructor-arg value="value 값입니다."/>
     </bean>
