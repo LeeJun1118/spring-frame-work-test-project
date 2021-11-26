@@ -11,7 +11,7 @@ public class HomeController {
 //    @GetMapping("/") 둘다 된다.
     @RequestMapping("/")
     public String index(Model model){
-        model.addAttribute("data","Hello");
+        model.addAttribute("data","Hello World");
         return "index";
     }
 }
