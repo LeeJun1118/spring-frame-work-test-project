@@ -21,11 +21,22 @@
         <constructor-arg value="참조값입니다."/>
     </bean>
 <!--값이 할당된 bean 을 넘겨 받는다.-->
-    <bean id="myResult" class="com.jun.spring_test.controller.ConstructorController">
+    <bean id="myResult" class="com.jun.spring_test.controller.TestController">
         <constructor-arg ref="cons_Id"/>
     </bean>
 <!-- 값을 바로 넣어서 실행한다.  -->
-    <bean id="test2" class="com.jun.spring_test.controller.ConstructorController">
+    <bean id="test2" class="com.jun.spring_test.controller.TestController">
         <constructor-arg value="value 값입니다."/>
+    </bean>
+
+
+<!--    Property : 필드, 클래스 변수, 인스턴스 변수를 의미하며 setter 로 값을 할당한다.-->
+    <bean id="prop_id" class="com.jun.spring_test.controller.PropertyTest">
+        <property name="result">
+            <value type="java.lang.String">Property 결과</value>
+        </property>
+    </bean>
+    <bean id="prop_result" class="com.jun.spring_test.controller.TestController">
+        <constructor-arg ref="prop_id"/>
     </bean>
 </beans>
