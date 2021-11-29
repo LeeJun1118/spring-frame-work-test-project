@@ -41,8 +41,10 @@
         <constructor-arg ref="prop_id"/>
     </bean>
 
-<!--    Set property list -->
-    <bean id="prop_list" class="com.jun.spring_test.controller.xmlTest.PropertyListTest">
+<!--    Property list -->
+<!--    scope="prototype" 으로 아래의 빈이 호출될 때마다 새 인스턴스가 생성되어 여러개의 인스턴스가 생성된다. -->
+<!--    scope 설정이 없다면 default 로 singleton 이 설정되어 하나의 인스턴스만 생성된다. -->
+    <bean id="prop_list" class="com.jun.spring_test.controller.xmlTest.PropertyListTest" scope="prototype">
         <property name="resultList">
             <list>
                 <value>Property</value>
@@ -52,6 +54,18 @@
         </property>
     </bean>
     <bean id="prop_list_result" class="com.jun.spring_test.controller.xmlTestController.TestController">
+        <constructor-arg ref="prop_list"/>
+    </bean>
+
+<!--    Property List Ref-->
+    <bean id="prop_list_ref" class="com.jun.spring_test.controller.xmlTest.PropertyListTest">
+        <property name="resultListRef">
+            <list>
+                <ref bean="prop_list"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="prop_list_result_ref" class="com.jun.spring_test.controller.xmlTestController.TestController">
         <constructor-arg ref="prop_list"/>
     </bean>
 </beans>

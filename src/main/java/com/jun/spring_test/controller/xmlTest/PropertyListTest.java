@@ -13,4 +13,8 @@ public class PropertyListTest {
     public void setResultList(List<String> resultList) {
         this.resultList = resultList;
     }
+
+    public void setResultListRef(List resultListRef) {
+        this.resultList = resultListRef;
+    }
 }
