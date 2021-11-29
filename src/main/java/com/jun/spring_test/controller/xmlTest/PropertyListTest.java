@@ -5,6 +5,7 @@ import java.util.List;
 public class PropertyListTest {
 
     private List<String> resultList;
+    private List<PropertyTest> refResultList;
 
     public List<String> getResultList() {
         return resultList;
@@ -14,7 +15,12 @@ public class PropertyListTest {
         this.resultList = resultList;
     }
 
-    public void setResultListRef(List resultListRef) {
-        this.resultList = resultListRef;
+
+    public List<PropertyTest> getRefResultList() {
+        return refResultList;
+    }
+
+    public void setRefResultList(List<PropertyTest> setRefResultList) {
+        this.refResultList = setRefResultList;
     }
 }

@@ -59,13 +59,15 @@
 
 <!--    Property List Ref-->
     <bean id="prop_list_ref" class="com.jun.spring_test.controller.xmlTest.PropertyListTest">
-        <property name="resultListRef">
+        <property name="refResultList">
             <list>
-                <ref bean="prop_list"/>
+                <ref bean="prop_id"/>
+                <ref bean="prop_id"/>
+                <ref bean="prop_id"/>
             </list>
         </property>
     </bean>
-    <bean id="prop_list_result_ref" class="com.jun.spring_test.controller.xmlTestController.TestController">
+    <bean id="prop_list_result_ref" class="com.jun.spring_test.controller.xmlTestController.TestController2">
         <constructor-arg ref="prop_list_ref"/>
     </bean>
 
