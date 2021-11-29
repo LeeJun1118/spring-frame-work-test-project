@@ -68,4 +68,20 @@
     <bean id="prop_list_result_ref" class="com.jun.spring_test.controller.xmlTestController.TestController">
         <constructor-arg ref="prop_list_ref"/>
     </bean>
+
+<!--    Property Set-->
+    <bean id="prop_set" class="com.jun.spring_test.controller.xmlTest.PropertySetTest">
+        <property name="result">
+            <set>
+                <value>문자열</value>
+                <value>Set 의 특성상 중복 주입 안됨</value>
+                <value>중복 주입 안됨</value>
+                <value>중복 주입 안됨</value>
+                <value>중복 주입 안됨</value>
+            </set>
+        </property>
+    </bean>
+    <bean id="prop_list_result_set" class="com.jun.spring_test.controller.xmlTestController.TestController">
+        <constructor-arg ref="prop_set"/>
+    </bean>
 </beans>
