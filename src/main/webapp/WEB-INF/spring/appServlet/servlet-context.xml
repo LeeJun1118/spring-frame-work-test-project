@@ -66,6 +66,6 @@
         </property>
     </bean>
     <bean id="prop_list_result_ref" class="com.jun.spring_test.controller.xmlTestController.TestController">
-        <constructor-arg ref="prop_list"/>
+        <constructor-arg ref="prop_list_ref"/>
     </bean>
 </beans>
