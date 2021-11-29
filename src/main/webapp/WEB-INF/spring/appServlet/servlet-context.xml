@@ -32,11 +32,26 @@
 
 <!--    Property : 필드, 클래스 변수, 인스턴스 변수를 의미하며 setter 로 값을 할당한다.-->
     <bean id="prop_id" class="com.jun.spring_test.controller.xmlTest.PropertyTest">
-        <property name="result">
+        <!--<property name="result">
             <value type="java.lang.String">Property 결과</value>
-        </property>
+        </property>-->
+        <property name="result" value="Property 결과"/>
     </bean>
     <bean id="prop_result" class="com.jun.spring_test.controller.xmlTestController.TestController">
         <constructor-arg ref="prop_id"/>
+    </bean>
+
+<!--    Set property list -->
+    <bean id="prop_list" class="com.jun.spring_test.controller.xmlTest.PropertyListTest">
+        <property name="resultList">
+            <list>
+                <value>Property</value>
+                <value>list</value>
+                <value>결과</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="prop_list_result" class="com.jun.spring_test.controller.xmlTestController.TestController">
+        <constructor-arg ref="prop_list"/>
     </bean>
 </beans>
