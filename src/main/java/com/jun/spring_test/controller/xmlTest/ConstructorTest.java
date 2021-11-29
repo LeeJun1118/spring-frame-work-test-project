@@ -8,8 +8,8 @@ public class ConstructorTest {
         this.resultValue = resultValue;
     }
 
-    public String result(){
-        return "My Result Value : " + resultValue ;
+    public String getResult(){
+        return resultValue ;
     }
 
 }

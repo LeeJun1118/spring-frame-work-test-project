@@ -9,6 +9,5 @@ public class PropertyTest {
 
     public void setResult(String result) {
         this.result = result;
-        System.out.println(result);
     }
 }

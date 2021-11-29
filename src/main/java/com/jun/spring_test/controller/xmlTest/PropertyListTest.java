@@ -10,7 +10,7 @@ public class PropertyListTest {
         return resultList;
     }
 
-    public void setResultList(List<String> resultList){
+    public void setResultList(List<String> resultList) {
         this.resultList = resultList;
     }
 }

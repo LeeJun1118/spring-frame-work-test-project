@@ -8,11 +8,11 @@ import com.jun.spring_test.controller.xmlTest.PropertyTest;
 public class TestController {
 
     public TestController(ConstructorTest test) {
-        System.out.println(test.result());
+        System.out.println("ConstructorTest : " + test.getResult());
     }
 
     public TestController(PropertyTest propertyTest) {
-        propertyTest.getResult();
+        System.out.println(propertyTest.getResult());
     }
 
     public TestController(PropertyListTest propertyListTest) {
