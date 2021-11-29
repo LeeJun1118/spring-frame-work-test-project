@@ -1,5 +1,8 @@
-package com.jun.spring_test.controller;
+package com.jun.spring_test.controller.xmlTestController;
 
+
+import com.jun.spring_test.controller.xmlTest.ConstructorTest;
+import com.jun.spring_test.controller.xmlTest.PropertyTest;
 
 public class TestController {
 

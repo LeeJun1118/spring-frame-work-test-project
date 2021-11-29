@@ -1,4 +1,4 @@
-package com.jun.spring_test.controller;
+package com.jun.spring_test.controller.xmlTest;
 
 public class PropertyTest {
     String result;
